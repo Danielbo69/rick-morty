@@ -8,7 +8,6 @@ function Characters(props) {
   return (
     <div className="characters">
       <h1>Personajes</h1>
-      <span className="back-home" onClick={resetCharacter}>Volver</span>
       <div className="container-characters">
         {characters.map((character, index) => (
           <div className="character-container" key={index}>
@@ -38,11 +37,19 @@ function Characters(props) {
                     <span className="text-gray">Specie: </span>
                     <span className="text-gray">{character.species}</span>
                 </p>
+                <p>
+                    <span className="text-gray">Gender: </span>
+                    <span className="text-gray">{character.gender}</span>
+                </p>
+                <p>
+                    <span className="text-gray">Origin: </span>
+                    <span className="text-gray">{character.location.name}</span>
+                </p>
             </div>
           </div>
         ))}
       </div>
-      <span className="nack-home">Volver</span>
+      <span className="back-home" onClick={resetCharacter}>Volver</span>
     </div>
   );
 }
