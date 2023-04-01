@@ -49,7 +49,7 @@ function Characters(props) {
           </div>
         ))}
       </div>
-      <span className="back-home" onClick={resetCharacter}>Volver</span>
+      <button className="back-home" onClick={resetCharacter}>Volver</button>
     </div>
   );
 }

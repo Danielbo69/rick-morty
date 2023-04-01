@@ -18,12 +18,12 @@ function App() {
         {characters ? (
           <Characters characters={characters} setCharacters={setCharacters} />
         ) : (
-          <>
-            <img src={imgRickMorty} alt="Rick & Morty" className="img-home" />
+          <div className="App-content">
+            <img src={imgRickMorty} alt="Rick & Morty" className="App-logo" />
             <button onClick={restApi} className="btn-search">
               Buscar Personajes
             </button>
-          </>
+          </div>
         )}
       </header>
     </div>
